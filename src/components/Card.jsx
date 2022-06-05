@@ -35,7 +35,11 @@ function Card(props) {
   return (
     <div className="container">
       <div class="d-flex justify-content-end mb-2">
-        <input type="text" placeholder="search" />
+        <input
+          onChange={(e) => searchCard(e)}
+          type="text"
+          placeholder="search"
+        />
         <button className="filter mx-2" onClick={() => showDetails()}>
           <BsFilter />
           Filters
