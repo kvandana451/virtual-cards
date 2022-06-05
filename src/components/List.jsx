@@ -1,6 +1,10 @@
+import { FaBurn } from "react-icons/fa";
+import { BsArrowRepeat } from "react-icons/bs";
 const Data = [
   {
     name: "Mixmax",
+
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -28,6 +32,7 @@ const Data = [
   },
   {
     name: "Quickbook",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -56,6 +61,8 @@ const Data = [
   {
     name: "Motion",
 
+    img: <FaBurn />,
+
     budget_name: "Software subscription",
 
     owner_id: 3,
@@ -82,6 +89,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -109,6 +117,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -136,6 +145,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -163,6 +173,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -190,6 +201,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -217,6 +229,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -244,6 +257,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -271,6 +285,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -298,6 +313,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -325,6 +341,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -352,7 +369,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
-
+    img: <BsArrowRepeat />,
     budget_name: "Software subscription",
 
     owner_id: 14,
@@ -379,6 +396,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -406,6 +424,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -433,6 +452,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -460,6 +480,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 
@@ -487,6 +508,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <FaBurn />,
 
     budget_name: "Software subscription",
 
@@ -514,6 +536,7 @@ const Data = [
   },
   {
     name: "PandaDoc",
+    img: <BsArrowRepeat />,
 
     budget_name: "Software subscription",
 

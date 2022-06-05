@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBurn } from "react-icons/fa";
+// import { FaBurn } from "react-icons/fa";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { BsDot } from "react-icons/bs";
 import { BsFilter } from "react-icons/bs";
@@ -10,9 +10,9 @@ import Modal from "./modal";
 function Card(props) {
   const [list, setList] = useState(Data);
   const [isOpen, setIsOpen] = useState(false);
-  const [visible, setVisible] = useState(5);
+  const [visible, setVisible] = useState(10);
   const showMoreItems = () => {
-    setVisible((prevValue) => prevValue + 5);
+    setVisible((prevValue) => prevValue + 10);
   };
 
   const showDetails = () => {
@@ -35,11 +35,7 @@ function Card(props) {
   return (
     <div className="container">
       <div class="d-flex justify-content-end mb-2">
-        <input
-          type="text"
-          placeholder="search"
-          onChange={(e) => searchCard(e)}
-        />
+        <input type="text" placeholder="search" />
         <button className="filter mx-2" onClick={() => showDetails()}>
           <BsFilter />
           Filters
@@ -82,59 +78,58 @@ function Card(props) {
         </div>
       </Modal>
 
-      <div class="card  ">
+      {/* <div class="card  "> */}
+      <div className="row">
         {list.slice(0, visible).map((item) => {
           return (
-            <div className=" container mb-2  ">
-              <div className="row" key={item.owner_id}>
-                <div className="col-sm-6">
-                  <div className="card mx-2 mt-2">
-                    <div className="card-body">
-                      <div class="d-flex justify-content-between">
-                        <h5 className="card-title">{item.name}</h5>
+            <div className="col-sm-6 " key={item.owner_id}>
+              <div className="card mx-2 mt-2">
+                <div className="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 className="card-title">{item.name}</h5>
+                    <span>{item.img}</span>
 
-                        <FaBurn />
-                      </div>
-                      <p>Vishal + Software Subscription</p>
-                      <div className="d-flex justify-content-between">
-                        <p className="cardType">{item.card_type}</p>
-                        <p>Expires 9 Feb</p>
-                      </div>
-                      <div>
-                        <ProgressBar variant="success" now={100} />
-                      </div>
-                      <p className="card-text mt-2">
-                        <div className="d-flex justify-content-between">
-                          <p>
-                            <BsDot className="bsdot" />
-                            Spent
-                          </p>
-                          <p>
-                            {item.spent.value} {item.spent.currency}
-                          </p>
-                        </div>
-                        <div className="d-flex justify-content-between">
-                          <p>
-                            <BsDot className="bsdot-second px-1" />
-                            Available to Spend
-                          </p>
-                          <p>
-                            {item.available_to_spend.value}{" "}
-                            {item.available_to_spend.currency}
-                          </p>
-                        </div>
-                      </p>
-                      <Link to="/cardlisting" className="ms-2">
-                        <button
-                          onClick={() => {
-                            props.fun(item.owner_id);
-                          }}
-                        >
-                          send Id
-                        </button>
-                      </Link>
-                    </div>
+                    {/* <FaBurn /> */}
                   </div>
+                  <p>Vishal + Software Subscription</p>
+                  <div className="d-flex justify-content-between">
+                    <p className="cardType">{item.card_type}</p>
+                    <p>Expires 9 Feb</p>
+                  </div>
+                  <div>
+                    <ProgressBar variant="success" now={100} />
+                  </div>
+                  <p className="card-text mt-2">
+                    <div className="d-flex justify-content-between">
+                      <p>
+                        <BsDot className="bsdot" />
+                        Spent
+                      </p>
+                      <p>
+                        {item.spent.value} {item.spent.currency}
+                      </p>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                      <p>
+                        <BsDot className="bsdot-second px-1" />
+                        Available to Spend
+                      </p>
+                      <p>
+                        {item.available_to_spend.value}{" "}
+                        {item.available_to_spend.currency}
+                      </p>
+                    </div>
+                  </p>
+                  <Link to="/cardlisting" className="ms-2">
+                    <button
+                      class="border-0 bg-info px-2"
+                      onClick={() => {
+                        props.fun(item.owner_id);
+                      }}
+                    >
+                      send Id
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
