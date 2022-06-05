@@ -2,7 +2,7 @@
   "name": "virtual_cards",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/kvandana451/virtual-cards",
+  "homepage": "https://kvandana451.github.io/virtual-cards/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
