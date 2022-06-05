@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kvandana451.github.io/virtual-cards/static/css/main.5d4a0e29.css",
+    "main.js": "/kvandana451.github.io/virtual-cards/static/js/main.3c95a64d.js",
+    "index.html": "/kvandana451.github.io/virtual-cards/index.html",
+    "main.5d4a0e29.css.map": "/kvandana451.github.io/virtual-cards/static/css/main.5d4a0e29.css.map",
+    "main.3c95a64d.js.map": "/kvandana451.github.io/virtual-cards/static/js/main.3c95a64d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4a0e29.css",
+    "static/js/main.3c95a64d.js"
+  ]
+}
